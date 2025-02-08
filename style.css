@@ -200,42 +200,57 @@ button:hover {
 }
 
 
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+ @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
 
-    .container {
-        flex-direction: column;
-        height: auto;
-    }
+            .search-results[data-purpose="top-movies"] {
+                display: none;
+            }
 
-    .search-results {
-        width: 100%;
-        max-width: none;
-        max-height: 250px;
-    }
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
 
-    .main-content iframe {
-        height: 300px;
-    }
+            .search-results {
+                width: 100%;
+                max-width: none;
+                max-height: 250px;
+            }
 
-    form {
-        flex-direction: column;
-        gap: 5px;
-    }
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
 
-    input,
-    button {
-        font-size: 14px;
-    }
+            .search-results {
+                width: 100%;
+                max-width: none;
+                max-height: 250px;
+            }
 
-    button {
-        padding: 8px 12px;
-    }
+            .main-content iframe {
+                height: 300px;
+            }
 
-    iframe {
-        max-height: 180px;
-    }
+            form {
+                flex-direction: column;
+                gap: 5px;
+            }
 
-}
+            input,
+            button {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px 12px;
+            }
+
+            iframe {
+                max-height: 180px;
+            }
+
+        }
