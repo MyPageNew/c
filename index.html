@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
-    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/camera-objective-1718068-1459209.png?f=webp&w=256" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://thumb.cloud.mail.ru/weblink/thumb/xw1/hPZo/pz7QbpsHP" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- Search Results Section -->
         <div class="search-results">
-            <h2>Search Results</h2>
+            <h2 class="resultName"></h2>
             <div id="result"></div>
         </div>
 
-        <!-- Main Content Section -->
         <div class="main-content">
             <form id="searchForm">
                 <input type="text" id="searchInput" placeholder="Enter film name or Kinopoisk URL/number" required>
@@ -28,12 +26,12 @@
             </form>
             <iframe id="filmFrame" allowfullscreen></iframe>
             <div class="divDow">
-                <p class="name">Kinopoisk Cinema</p>
+                <p class="name">Select And Enjoy Movies</p>
+                <button class="trailer"></button>
                 <a href="" id="downloadLink" class="download-link">Download</a>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
