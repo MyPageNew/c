@@ -204,22 +204,6 @@ button:hover {
             body {
                 padding: 10px;
             }
-
-            .search-results[data-purpose="top-movies"] {
-                display: none;
-            }
-
-            .container {
-                flex-direction: column;
-                height: auto;
-            }
-
-            .search-results {
-                width: 100%;
-                max-width: none;
-                max-height: 250px;
-            }
-
             .container {
                 flex-direction: column;
                 height: auto;
