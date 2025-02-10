@@ -204,8 +204,6 @@ window.addEventListener("load", loadFilmFromLocalStorage);
 
 async function fetchTitleAndHLS(extractedNumber) {
     const apiUrl = `https://kinobox.tv/api/players?kinopoisk=${extractedNumber}&sources=turbo%2Ccollaps%2Calloha%2Cvibix%2Cvideocdn%2Chdvb%2Ckodik`;
-    console.log("sae:", typeof extractedNumber);
-
     try {
         let iframeUrl = '';
         if (typeof extractedNumber === "number") {
@@ -220,13 +218,12 @@ async function fetchTitleAndHLS(extractedNumber) {
         } else {
             iframeUrl = extractedNumber;
         }
-        console.log(iframeUrl);
 
         if (iframeUrl) {
             const response = await fetch(iframeUrl,{
-  mode: 'cors',
-  credentials: 'include'
-});
+                     mode: 'cors',
+                     credentials: 'include'
+                    });
             if (!response.ok) {
                 throw new Error(`Request failed: ${response.status}`);
             }
