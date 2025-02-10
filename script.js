@@ -223,7 +223,10 @@ async function fetchTitleAndHLS(extractedNumber) {
         console.log(iframeUrl);
 
         if (iframeUrl) {
-            const response = await fetch(iframeUrl);
+            const response = await fetch(iframeUrl,{
+  mode: 'cors',
+  credentials: 'include'
+});
             if (!response.ok) {
                 throw new Error(`Request failed: ${response.status}`);
             }
